@@ -31,6 +31,7 @@ class ImmutableArray : public nonassignable
                     arr[i]=stdarr[i];
             }
 
+
             //accessors return a const reference to forbid modifying
             //-------------------------------------------------------------
             const T& at(int idx)
@@ -66,28 +67,28 @@ class ImmutableArray : public nonassignable
                 return arr.cend();
             }
 
-            typename std::array<T, sz>::const_iterator crbegin()
+            typename std::array<T, sz>::const_reverse_iterator crbegin()
             {
                 return arr.crbegin();
             }
 
-            typename std::array<T, sz>::const_iterator crend()
+            typename std::array<T, sz>::const_reverse_iterator crend()
             {
                 return arr.crend();
             }
             //-------------------------------------------------------------
 
-            bool empty()
+            bool empty() const
             {
                 return arr.empty();
             }
 
-            typename std::array<T, sz>::size_type size()
+            typename std::array<T, sz>::size_type size() const
             {
                 return arr.size();
             }
 
-            constexpr typename std::array<T, sz>::size_type max_size()
+            constexpr typename std::array<T, sz>::size_type max_size() const
             {
                 return arr.max_size();
             }

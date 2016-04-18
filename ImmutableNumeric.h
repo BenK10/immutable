@@ -1,7 +1,7 @@
 #ifndef IMMUTABLEINT_H_INCLUDED
 #define IMMUTABLEINT_H_INCLUDED
 
-#include <iostream>
+#include <ostream>
 #include <type_traits>
 #include "nonassignable.h"
 
