@@ -15,6 +15,7 @@ private:
     T val;
 
     public:
+    ImmutableNumeric<T>() = default;
     ImmutableNumeric<T>(T num) : val(num)
     {}
 
