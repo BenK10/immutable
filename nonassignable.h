@@ -1,7 +1,10 @@
 #ifndef IMMUTABLE_H_INCLUDED
 #define IMMUTABLE_H_INCLUDED
 
-//inherit publicly from this and omit operator= in derived class it non-assignable
+//based on Boost::immutable
+//requires C++11
+
+//inherit publicly from this and omit operator= in derived class to make it non-assignable
 class nonassignable
 {
     protected:
