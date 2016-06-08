@@ -15,7 +15,7 @@ class ImmutableArray : public nonassignable
     public:
 
             //same interface as Array but fill(), swap(), data() are forbidden
-            //and accessors only return const reference to modifying
+            //and accessors only return const reference to forbid modifying
 
             ImmutableArray<T, sz>() = default;
             ImmutableArray<T, sz>(std::initializer_list<T> l)
