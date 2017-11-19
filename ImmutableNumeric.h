@@ -26,7 +26,7 @@ private:
     }
 
     //overload operators to do arithmetic on ImmutableNumerics directly
-    //otherwise just use ImmutableNumeric.value in any context that supports the ImumtableNumeric's template type
+    //otherwise just use ImmutableNumeric.value in any context that supports the ImmutableNumeric's template type
   //  friend T operator+ <>(T, ImmutableNumeric);
 
     friend std::ostream& operator<<(std::ostream&, ImmutableNumeric<T>); //not templatized
